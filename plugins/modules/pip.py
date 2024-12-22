@@ -413,7 +413,7 @@ def setup_virtualenv(module, env, chdir, out, err):
 
     # Only use already installed Python interpreters.
     # Don't download them, for now.
-    cmd.extend(['--python-preference', 'only-system'])
+    #cmd.extend(['--python-preference', 'only-system'])
 
     virtualenv_python = module.params['virtualenv_python']
     if virtualenv_python:
